@@ -11,9 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     var timeCounter = 1
     var timer: NSTimer?
-    @IBOutlet var timerLabel: UILabel!
     var countingStarted = false
     var pausedButtonPressed = false
+    @IBOutlet var timerLabel: UILabel!
 
     func checkForMinute(currentValueOfCounter: Int) {
         let minuteChecker = String(currentValueOfCounter) //minuteChecker is string version of timeCounter
@@ -37,26 +37,31 @@ class ViewController: UIViewController {
     }
 
     @IBAction func playButton(sender: AnyObject) {
-        if countingStarted {
+        if countingStarted && !pausedButtonPressed {
             return
         }
+        if !pausedButtonPressed {
+            timeCounter = 0
+        }
         countingStarted = true
-        timeCounter = 0
+        pausedButtonPressed = false
         timer = NSTimer()
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("result"), userInfo: nil, repeats: true)
     }
     
     @IBAction func pauseButton(sender: AnyObject) {
-        timer!.invalidate()
-        if pausedButtonPressed {
+        if !countingStarted {
             return
         }
+        timer!.invalidate()
         pausedButtonPressed = true
-        timer = NSTimer()
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("result"), userInfo: nil, repeats: true)
+        print("Another")
     }
 
     @IBAction func stopButton(sender: AnyObject) {
+        if !countingStarted {
+            return
+        }
         timer!.invalidate()
         timerLabel.text = "00:00"
         countingStarted = false
