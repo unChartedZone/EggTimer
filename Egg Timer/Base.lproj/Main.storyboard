@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Navigation_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Egg_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,7 +21,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLw-Pe-Ac2">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="mpT-0F-3Kr"/>
+                                    <constraint firstAttribute="height" constant="44" id="4AC-v5-FCp"/>
                                 </constraints>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -35,7 +35,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBq-pV-eeC">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="9Pz-TK-pNE"/>
+                                    <constraint firstAttribute="height" constant="44" id="7z7-AN-fNF"/>
                                 </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="stop" id="zey-i0-KLW">
@@ -61,8 +61,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZx-zq-5rc">
                                 <rect key="frame" x="181" y="203" width="238" height="194"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="238" id="G6R-Vk-1kp"/>
-                                    <constraint firstAttribute="height" constant="194" id="hsT-uf-tw9"/>
+                                    <constraint firstAttribute="width" constant="238" id="HCj-v5-N9q"/>
+                                    <constraint firstAttribute="height" constant="194" id="ee0-WX-yoL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="69"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -71,14 +71,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TBq-pV-eeC" secondAttribute="bottom" id="GcY-3x-JHF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cLw-Pe-Ac2" secondAttribute="trailing" constant="-20" id="ISj-Mz-1xD"/>
-                            <constraint firstItem="OZx-zq-5rc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PZc-oJ-196"/>
-                            <constraint firstItem="TBq-pV-eeC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="VSx-yW-R2Q"/>
-                            <constraint firstItem="cLw-Pe-Ac2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bGm-2K-RPw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TBq-pV-eeC" secondAttribute="trailing" constant="-20" id="iWT-TS-vuU"/>
-                            <constraint firstItem="OZx-zq-5rc" firstAttribute="top" secondItem="cLw-Pe-Ac2" secondAttribute="bottom" constant="139" id="yKJ-j0-Zox"/>
-                            <constraint firstItem="cLw-Pe-Ac2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ySa-09-28o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TBq-pV-eeC" secondAttribute="trailing" constant="-20" id="2Yc-cl-4W0"/>
+                            <constraint firstItem="TBq-pV-eeC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="WKR-5y-BWt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cLw-Pe-Ac2" secondAttribute="trailing" constant="-20" id="fcN-fA-ce4"/>
+                            <constraint firstItem="OZx-zq-5rc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m1e-hu-HAw"/>
+                            <constraint firstItem="cLw-Pe-Ac2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nTh-fk-2wO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TBq-pV-eeC" secondAttribute="bottom" id="uOi-5Z-i7A"/>
+                            <constraint firstItem="OZx-zq-5rc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yNq-xE-AiK"/>
+                            <constraint firstItem="cLw-Pe-Ac2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="yZ4-Xj-fas"/>
                         </constraints>
                     </view>
                     <connections>
